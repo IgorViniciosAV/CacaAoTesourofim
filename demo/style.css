@@ -1,0 +1,458 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+
+:root {
+    --cor-primaria: #EBECEE;
+    --cor-secundaria: #01080E;
+    --cor-terciaria: #ffb172;
+    --cor-hover-titulo: #7C81AD;
+    --cor-hover-botao: #393E46;
+
+    --fonte-primaria: 'Poppins', sans-serif;
+    --fonte-secundaria: 'Poppins', sans-serif;
+}
+
+[data-contexto="foco"] {
+    --main-bg-color: linear-gradient(180deg, #ffb172 0%, #b47746 48.44%, #69472a 100%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    background: var(--main-bg-color);
+}
+
+@keyframes up- {
+    0% {
+        scale: 0.8;
+    }
+}
+
+body {
+    box-sizing: border-box;
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
+    cursor: default;
+    background: url("./imagens/pattern.png") no-repeat;
+    animation: up 0.8s;
+}
+
+.apresentacao__conteudo__caixa {
+    animation: scrollAni 1s ease-in-out;
+    animation-timeline: view();
+    animation-range: cover 0% cover 50%;
+}
+
+.apresentacao__imagem {
+    animation: scrollAniIn 1ms ease-in-out both;
+    animation-timeline: view();
+    animation-range: entry 25% cover 50%;
+}
+
+.cabecalho {
+    padding: 2% 0 0 15%;
+}
+
+.cabecalho__menu {
+    display: flex;
+    gap: 80px;
+}
+
+.cabecalho__menu__link {
+    font-family: var(--fonte-secundaria);
+    color: var(--cor-terciaria);
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.cabecalho__menu__link:hover {
+    text-decoration: underline;
+}
+
+.titulo-destaque {
+    color: var(--cor-terciaria);
+}
+
+.titulo-destaque:hover {
+    color: var(--cor-hover-titulo);
+    transition: all 500ms;
+}
+
+.apresentacao {
+    padding: 4.7% 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 82px;
+}
+
+.apresentacao-about {
+    padding: 4.9% 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.apresentacao__conteudo {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.apresentacao__conteudo__titulo {
+    font-size: 2.25rem;
+    font-family: var(--fonte-primaria);
+    font-weight: 400;
+}
+
+#apresentacao__conteudo__titulo-curriculo {
+    font-size: 1.875rem;
+    font-family: var(--fonte-primaria);
+    font-weight: 400;
+}
+
+.apresentacao__conteudo__texto {
+    font-size: 1.5rem;
+    font-family: var(--fonte-secundaria);
+}
+
+.apresentacao__conteudo__text-curriculo {
+    font-size: 1.4375rem;
+    font-family: var(--fonte-secundaria);
+}
+
+.apresentacao__conteudo__text {
+    font-size: 1.475rem;
+    font-family: var(--fonte-secundaria);
+}
+
+.apresentacao__links {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px;
+}
+
+.apresentacao__links__subtitulo {
+    font-family: var(--fonte-primaria);
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+
+.apresentacao__links__subtitulo:hover {
+    color: var(--cor-terciaria);
+    transition: all 500ms;
+}
+
+.apresentacao__links__navegacao {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    border: 2px outset var(--cor-terciaria);
+    width: 50%;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 1.5rem;
+    padding: 21.5px 0;
+    text-decoration: none;
+    color: var(--cor-secundaria);
+    font-family: var(--fonte-secundaria);
+    font-weight: 600;
+}
+
+.apresentacao__links__navegacao:hover {
+    background-color: var(--cor-hover-botao);
+    transform: translateY(3px);
+    transition: all 200ms ease;
+}
+
+.apresentacao__conteudo__certificados {
+    color: var(--cor-terciaria);
+    text-decoration: none;
+}
+
+.apresentacao__imagem {
+    width: 40%;
+    border-radius: 40px;
+}
+
+.apresentacao__imagem-curriculo {
+    width: 40%;
+    border-radius: 40px;
+}
+
+.rodape {
+    text-align: center;
+    padding: 24px;
+    background-color: var(--cor-terciaria);
+    font-family: var(--fonte-secundaria);
+    font-weight: 400;
+    font-size: 1.5rem;
+    color: var(--cor-primaria);
+}
+
+#apresentacao__conteudo__titulo-curriculo:hover {
+    color: var(--cor-terciaria);
+    transition: 500ms;
+}
+
+#desenvolvedor:hover {
+    color: var(--cor-hover-titulo);
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    transition: 500ms;
+}
+
+.top:hover {
+    color: var(--cor-hover-titulo);
+    transition: 300ms;
+}
+
+/* ================================ */
+
+.cabecalho {
+    background-color: var(--main-bg-color);
+    padding-bottom: 1em;
+}
+
+.cabecalho__menu__link {
+    color: white;
+    background-color: var(--cor-terciaria);
+    padding: 0.5em;
+    border-radius: 5px;
+    margin-right: 10em;
+}
+
+.rodape {
+    background-color: var(--main-bg-color);
+    color: var(--cor-terciaria);
+    /* margin-right: 7em; */
+    margin-top: 0.2em;
+    width: 85vw;
+}
+
+.titulo-angular {
+    color: var(--cor-terciaria);
+    font-family: var(--fonte-primaria);
+    font-weight: 700;
+    font-size: 1.8rem;
+}
+
+.apresentacao__conteudo__caixa {
+    background-color: white;
+    padding: 1em;
+    border-radius: 15px;
+    box-shadow: 0px 4px 30px 1px #0000008f;
+}
+
+.titulo-angular {
+    margin-bottom: 0.8em;
+}
+
+.top {
+    font-weight: 600;
+}
+
+.apresentacao__conteudo__text {
+    line-height: 1.4em;
+}
+
+.texto-publi {
+    font-weight: 500;
+}
+
+.rodape-texto {
+    text-align: center;
+    font-size: 1rem;
+    width: 85vw;
+}
+
+@media screen and (max-width: 500px) {
+    .cabecalho__menu__link {
+        text-decoration: none;
+        border-radius: 18px;
+        /* box-shadow: -1px 3px 4px #845800; */
+        transition: 200ms;
+    }
+
+    .cabecalho__menu__link:active {
+        box-shadow: none;
+        transform: translateY(3px);
+        transition: none;
+        text-decoration: none;
+    }
+
+    .apresentacao__conteudo__caixa {
+        animation-range: cover 0% cover 30%;
+    }
+
+    .apresentacao__imagem {
+        animation: scrollAniInCel 1ms ease-in-out;
+        animation-timeline: scroll();
+        animation-range: cover 0% cover 30%;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .cabecalho {
+        padding: 5% 12%;
+    }
+
+    .cabecalho__menu {
+        justify-content: center;
+        gap: 40px;
+    }
+
+    .apresentacao {
+        flex-direction: column-reverse;
+        padding: 6%;
+    }
+
+    .apresentacao__conteudo {
+        width: auto;
+    }
+
+    .apresentacao-about {
+        flex-direction: column-reverse;
+        padding: 6%;
+        gap: 3em;
+    }
+
+    .apresentacao-curriculo {
+        flex-direction: column-reverse;
+        gap: 80px;
+        padding: 6%;
+    }
+
+    .apresentacao__conteudo-curriculo {
+        width: auto;
+        gap: 55px;
+    }
+
+    .apresentacao__imagem {
+        width: 85%;
+    }
+
+    .apresentacao__imagem-curriculo {
+        width: 64%;
+    }
+
+    .QRcode {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2em;
+    }
+
+    .QRcode__botao {
+        border: 2px solid black;
+        padding: 0.5em 2em;
+        border-radius: 100px;
+        font-weight: 600;
+        color: var(--cor-terciaria);
+        background-color: rgba(0, 0, 0, 0.477);
+        transition: all 100ms;
+    }
+    .QRcode__botao:active {
+        background-color: rgba(0, 0, 0, 0.519);
+        scale: 1.01;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .cabecalho__menu__link:hover {
+        text-decoration: none;
+        border-radius: 18px;
+        /* box-shadow: -1px 3px 4px #845800; */
+        transition: 200ms;
+    }
+
+    .cabecalho__menu__link:active {
+        box-shadow: none;
+        transform: translateY(3px);
+        transition: none;
+    }
+}
+
+.imagem-animada {
+    animation: rotacao 1s;
+}
+
+.app__section-banner-container {
+    transition: all 1s;
+    animation: animationMain 1ms ease-in-out both;
+    animation-timeline: scroll();
+    animation-range: entry 10% cover 70%;
+}
+
+@media screen and (max-width: 500px) {
+    .app__section-banner-container {
+        animation-range: entry 10% cover 90%;
+    }
+}
+
+@keyframes animationMain- {
+    from {
+        opacity: 1;
+        scale: 1;
+    }
+
+    to {
+        opacity: 0;
+        scale: 1.2;
+    }
+}
+
+@keyframes scrollAni- {
+    from {
+        opacity: 0;
+        translate: -100vw 0;
+        rotate: 180deg;
+    }
+
+    to {
+        opacity: 1;
+        translate: 0 0;
+        rotate: 360deg;
+    }
+
+}
+
+@keyframes scrollAniIn- {
+    from {
+        opacity: 0;
+        clip-path: inset(45% 20% 45% 20%);
+    }
+
+    to {
+        opacity: 1;
+        clip-path: inset(0% 0% 0% 0%);
+    }
+}
+
+@keyframes scrollAniInCel- {
+    from {
+        opacity: 1;
+        scale: 1;
+    }
+
+    to {
+        opacity: 0;
+        scale: 2;
+    }
+}
+
+@keyframes rotacao- {
+    from {
+        rotate: 90deg;
+    }
+
+    to {
+        rotate: 360deg;
+    }
+}
